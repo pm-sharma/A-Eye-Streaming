@@ -1,5 +1,6 @@
 *{
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 h1,h4,p{
     text-align: center;
@@ -23,7 +24,32 @@ button{
 }
 #remote-container{
     display: flex;
-    border: 2px solid blue;
+    border: 2px solid #191D29;
     padding: 20px;
     margin-bottom: 30px;
+    padding: 20px;
+    margin-top:30px
+}
+#me{
+    display: flex;
+    border: 2px solid #191D29;
+    padding: 20px;
+    margin-bottom: 30px;
+    padding:20px
+}
+
+#app-id{
+    border-radius: 20px;
+}
+input{
+    outline: none
+}
+#start{
+    background-color: #191D29;
+    border-radius: 30px;
+    padding-right: 20px; 
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    color: white 
 }

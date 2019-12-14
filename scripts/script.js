@@ -52,7 +52,7 @@ document.getElementById("start").onclick = function () {
     });
 
 // Client Setup
-let appid = document.getElementById("app-id").value;
+let appid = "5471055921794d6d8919e9d83707cf82";
 let channelid="any-channel";
 let userid;
 

@@ -6,7 +6,7 @@
     <title>A-Eye</title>
     <!-- CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="./styles/style.css">
 
@@ -14,30 +14,52 @@
 </head>
 
 <body>
-    <h1>
-        Live Streaming - A-Eye
-    </h1>
-
-    <p>App id : <input type="text" id="app-id" value=""></p>
-    <button id="start">Connect</button>
-
-    <h4>My Streaming :</h4>
-    <div id="me"></div>
-
-    <h4>Other WebCam Streaming :</h4>
-    <!-- <div class="container">
-        <div class="row"> -->
-            <div id="remote-container">
-
+    <div style="height: 100vh;width:100%;background-color:#191D29" class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <div style="text-align: center;padding: 20px">
+                    <img style="height:90px;width:90px;border-radius: 50%" src="./Assets/logo.png" />
+                </div>
             </div>
-        <!-- </div>
-    </div> -->
-    
+
+        </div>
+        <div>
+            <div style="text-align: center;top:50%;left:50%;transform: translate(-50%,-50%);position: absolute;">
+                <h1 style="color: white">A - Eye</h1>
+                <h2 style="color: white"><a style="text-decoration: none" href="#main">The Watcher</a></h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="main" style="height: 100vh;width:100%;">
+        <div>
+            <h1>
+                Live Streaming
+            </h1>
+
+            <!-- <p>App id : <input type="text" id="app-id" value=""></p>-->
+            <button id="start">Connect</button> 
+
+            <div style="margin-top:40px">
+                <h4>My Streaming :</h4>
+                <div id="me"></div>
+            </div>
+            
+
+            <h4>Other WebCam Streaming :</h4>
+            <div id="remote-container">
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.0.0.js"></script>
     <script src="scripts/script.js"></script>
     <script>
-        $('#streamId').click(function() {
+        $('#streamId').click(function () {
             $('#streamId').css({
                 position: 'fixed',
                 top: 0,
