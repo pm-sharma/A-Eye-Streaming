@@ -9,6 +9,7 @@ let handleFail = function(err){
 
 // Queries the container in which the remote feeds belong
 let remoteContainer= document.getElementById("remote-container");
+let remoteContainer2= document.getElementById("remote-container-2");
 
 /**
  * @name addVideoStream
@@ -20,6 +21,12 @@ function addVideoStream(streamId){
     streamDiv.id=streamId;                       // Assigning id to div
     streamDiv.style.transform="rotateY(180deg)"; // Takes care of lateral inversion (mirror image)
     remoteContainer.appendChild(streamDiv);      // Add new div to container
+}
+function addVideoStream(streamId){
+    let streamDiv=document.createElement("div"); // Create a new div for every stream
+    streamDiv.id=streamId;                       // Assigning id to div
+    streamDiv.style.transform="rotateY(180deg)"; // Takes care of lateral inversion (mirror image)
+    remoteContainer2.appendChild(streamDiv);      // Add new div to container
 }
 /**
  * @name removeVideoStream

@@ -22,9 +22,24 @@
     <div id="remote-container">
 
     </div>
+    <div id="remote-container-2">
+
+    </div>
 
     <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.0.0.js"></script>
     <script src="scripts/script.js"></script>
+    <script>
+        $('#remote-container').click(function() {
+            $('#remote-container').css({
+                position: 'fixed',
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+                zIndex: 999
+            });
+        });
+    </script>
 </body>
 
 </html>
