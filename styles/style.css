@@ -24,5 +24,6 @@ button{
 #remote-container{
     display: flex;
     border: 2px solid blue;
-    
+    padding: 20px;
+    margin-bottom: 30px;
 }
