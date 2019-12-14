@@ -19,7 +19,10 @@ function addVideoStream(streamId){
     let streamDiv=document.createElement("div"); // Create a new div for every stream
     streamDiv.id=streamId;                       // Assigning id to div
     streamDiv.style.transform="rotateY(180deg)"; // Takes care of lateral inversion (mirror image)
-    streamDiv.addClass("col-4");
+    streamDiv.setAttribute("style",
+                    "border-radius: 10px; box-shadow: 1px 1px 2px -1px #ccc;"
+                )
+    streamDiv.setAttribute("class", "col-lg-4 col-md-10 col-sm-10");
     remoteContainer.appendChild(streamDiv);      // Add new div to container
 }
 
